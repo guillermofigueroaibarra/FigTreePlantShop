@@ -1,0 +1,202 @@
+header {
+	background-image: linear-gradient(#1f611f, #ccff33);
+	height:260px;	
+}
+nav 
+{
+text-align:center;
+background-color:#ccff33;
+padding-top:3px;padding-bottom:3px;
+font-size:20px;
+text-decoration:none;
+
+}
+a {color:#ffffff;text-decoration:none;}
+  
+nav li {
+  background-color:#003300; 
+  border: none;
+  color: #ffffff;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor:pointer;
+  border-radius:4px;
+  font-weight:bold;
+  margin-left:auto;margin-right:auto;
+}
+nav ul 
+{
+list-style:none;
+padding-left:0em;
+		
+}
+ 
+
+
+
+h1 {text-align:center;font-size:300%;color:#ccff33;
+  text-shadow: 2px 2px 4px #1f611f;}
+
+
+h2 {text-align:center;font-size:200%;color:#003300;
+  text-shadow: 2px 2px 4px #1f611f;}
+  
+  
+h3 {font-size:150%;color:#1f611f;text-shadow: 2px 2px 4px #ccff33;margin-left:1%;}
+
+
+p {font-size:20px;margin-left:1%;}
+
+li {font-size:20px;}
+
+.clear {
+	clear:both;
+}
+
+footer {
+background-image: linear-gradient(#ccff33, #1f611f);
+color:#ccff33;
+text-shadow: 2px 2px 4px #1f611f;
+font-size:22px;
+font-style: italic;
+text-align:center;
+padding:3px;
+font-weight:bold;
+margin-top:10px;
+}
+
+
+
+
+	
+
+* {
+  box-sizing: border-box;
+}
+
+
+#wrapper {margin-left:6%;margin-right:6%;color:#000000;background-color:#ccff33;}
+#wrap {margin-left:6%;margin-right:6%;color:#000000;background-color:#ffffff;}
+body {width:90%;margin-right:auto;margin-left:auto;background-image: url(plants.jpg);margin-top:0;margin-bottom:0;
+}
+
+
+nav li:hover {background-color:#b08401;}
+nav li:active {
+  background-color:#5B0105;
+  box-shadow: 0 5px #cccccc;
+}
+.disabled {
+color: #ffffff;
+ cursor: not-allowed;
+ opacity: 0.5;
+ text-decoration: none;
+}
+
+.mainimage {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:90%;
+height:auto;}
+	
+.logo {
+margin-right:40%;
+margin-left:40%;
+}
+
+.menuimages 
+{
+ display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
+  height:auto;
+  
+  }
+  
+ 
+  .clearfix {
+  overflow: auto;
+  background-color:#e1e1d0;
+  margin:25px;
+  transition: transform .2s;
+}
+
+
+.imghover {
+  transition: transform .3s;
+}
+.imghover:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+@media only screen and (max-width: 768px) { 
+.logo {display:block; margin-left: auto;
+  margin-right: auto;}
+#wrapper {margin-left:6%;margin-right:6%;color:#000000;background-color:#ffffff;}
+body {width:100%;}
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

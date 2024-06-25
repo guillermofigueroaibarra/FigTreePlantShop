@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Fig Tree: Home</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link href="figtree.css" rel="stylesheet" />
+<style>
+
+  
+
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding:10px;
+  height:auto; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+</head>
+
+
+
+<body>
+	<div id="wrapper">
+
+	<header> 
+<img src="logo2.png" alt="crest with leaves on" class="logo" style="width:225px;height:250px;" />
+	</header>
+		<nav>
+
+			<ul>
+<li class="disabled">Home</li>
+<li><a href="indoor.html">Indoor Plants</a></li>
+<li><a href="outdoor.html">Outdoor Plants</a></li>
+<li><a href="aquatic.html">Aquatic Plants</a></li>
+<li><a href="tools.html">Garden Tools</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+	</ul>
+	
+		</nav>
+		
+	<main><div id="wrap">
+	<h1>Welcome to our beautiful garden!</h1>
+<h2>Why should you buy plants?</h2>
+<p>People tend to think that plants can be used for decoration only, but there are many other benefits of having plants in your house. 
+</p>
+
+<ul>
+<li>Did you know plants can help you to breathe easier? when you breathe, your body takes in oxygen and releases carbon dioxide; plants need carbon dioxide to release oxygen, so that's a win-win for the plants and you.</li>
+<li>Another reason why you should buy plants is that they help you purify the air. According to NASA research, plants remove toxins from the air up to 87%</li>
+<li>Plants can also help you to stay focus on school. A study at The Royal College of Agriculture in Cirencester, England, found that students demonstrate 70% greater attentiveness when they're in a room containing plants
+</li>
+<li>Plants can improve your health too! According to a study from the Dutch Products Board of Horticulture, plants can decrease fatigue, colds, headaches, sore throats, and other symptoms.
+</li>
+</ul>
+
+
+
+
+
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  
+	  <img src="img1.jpg" style="width:100%">
+	  
+	</div>
+  
+	<div class="mySlides fade">
+	  
+	  <img src="img2.jpg" style="width:100%">
+	 
+	</div>
+  
+	<div class="mySlides fade">
+	 
+	  <img src="img3.jpg" style="width:100%">
+	  
+	</div>
+
+	
+  
+	
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+
+
+
+
+<h2>Our Products</h2>
+<p>The Fig Tree shop is an online business that sells a wide variety of plants and tools. We count with big plants for your backyard, or even if you don't have enough space we have small plants that are ideal for smaller places such as your living room or even your bedroom! We also sell the tools needed to do maintenance to your garden. Our products are divided into the following categories:</p>
+
+<div class="row">
+  <div class="column" style="background-color:#ffffff;">
+<h3>Indoor Plants</h3>
+  
+
+<a href="indoor.html"><div class="imghover"><img src="indoorplants.jpg" alt="plants inside a room" class="menuimages" /></div></a><br />
+
+<h3>Outdoor Plants</h3>
+
+<a href="outdoor.html"><div class="imghover"><img src="outdoorplants.jpg" alt="plants in the backyard" class="menuimages" /></div></a>
+
+	
+  </div>
+  
+  
+  <div class="column" style="background-color:#ffffff;">
+   <h3>Aquatic Plants</h3> 
+<a href="aquatic.html"><div class="imghover"><img src="aquaticplants.jpeg" alt="pond with aquatic plants" class="menuimages" /></div></a><br />
+<h3>Garden Tools</h3>
+<a href="tools.html"><div class="imghover"><img src="gardentools.jpg" alt="garden tools" class="menuimages" /></div></a>
+
+	
+	
+  </div>
+  
+  
+</div>
+
+<div style="background-color:#e6ffe6;border:6px solid #003300;margin-top:3%;margin-bottom:3%;margin-right:10%;margin-left:10%;padding-right:20px;padding-left:20px;">
+    <h2>Related Websites</h2>
+	<p>If you would like to know more about the benefits of having plants take a look at the following articles!</p>
+<ul>
+
+ <li><a href="https://www.bioadvanced.com/articles/5-benefits-houseplants" style="color:#0033cc;font-weight:bold;">5 Benefits of HousePlants</a></li>
+ <li><a href="https://www.ecowatch.com/health-benefits-of-having-plants-at-home-2608386260.html" style="color:#0033cc;font-weight:bold;">7 Science-Backed Health Benefits of Having Plants at Home</a></li>
+</ul>
+  </div>
+<br />
+
+
+
+
+
+
+
+</div>
+	</main>
+
+
+
+	<footer>
+	<p>Copyright &#169; Fig Tree 2019</p>			
+	</footer>
+	</div>
+
+
+
+
+	
+	<script>
+
+		// function to automatically switch pictures in slideshow
+		let slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 4000); // Change image every 2 seconds
+		}
+		</script>
+</body>
+
+
+</html>
