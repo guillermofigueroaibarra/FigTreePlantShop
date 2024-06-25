@@ -1,1 +1,1 @@
-# FigTreePlantShop
+The Plant Shop Website project involved creating a dynamic website to showcase a variety of plant products along with their prices. A fully responsive layout was designed and implemented to ensure optimal viewing on different devices. Interactive elements such as hover effects and modals were added to enhance user engagement. The website was developed with a user-friendly interface and smooth navigation, aimed at providing an enhanced user experience.
